@@ -16,6 +16,7 @@ https://docs.docker.com/get-docker/
 docker pull <imagename>
 minikube image load <imagename>
 ```
+In this case the image name is: `gcr.io/google-samples/hello-app:1.0`
 
 # Sync minikube with docker:
 `eval $(minikube docker-env)`
@@ -38,4 +39,5 @@ minikube image load <imagename>
 FInd pod via: `kubectl get pods`
 Kill pod via: `kubectl delete pod <podname>`
 See that it was killed by `kubectl get events`
+Or more specifically, `kubectl get events --field-selector reason=Killing`
 
