@@ -36,8 +36,8 @@ In this case the image name is: `gcr.io/google-samples/hello-app:1.0`
 `minikube service hello-world-lb --url`
 
 # Kill pod:
-FInd pod via: `kubectl get pods`
-Kill pod via: `kubectl delete pod <podname>`
-See that it was killed by `kubectl get events`
+FInd pod via: `kubectl get pods`  
+Kill pod via: `kubectl delete pod <podname>`  
+See that it was killed by `kubectl get events`  
 Or more specifically, `kubectl get events --field-selector reason=Killing`
 
